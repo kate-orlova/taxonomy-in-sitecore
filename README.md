@@ -1,6 +1,7 @@
 [![GitHub license](https://img.shields.io/github/license/kate-orlova/taxonomy-in-sitecore.svg)](https://github.com/kate-orlova/taxonomy-in-sitecore/blob/master/LICENSE)
 ![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 # Taxonomy in Sitecore
 The Taxonomy in Sitecore module ...
 TBC
