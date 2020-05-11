@@ -1,4 +1,6 @@
+[![GitHub license](https://img.shields.io/github/license/kate-orlova/taxonomy-in-sitecore.svg)](https://github.com/kate-orlova/taxonomy-in-sitecore/blob/master/LICENSE)
 # Taxonomy in Sitecore
+The Taxonomy in Sitecore module ...
 TBC
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
