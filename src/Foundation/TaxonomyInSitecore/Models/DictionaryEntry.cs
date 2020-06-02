@@ -2,5 +2,6 @@
 {
     public class DictionaryEntry
     {
+        public virtual string Text  {get; set;}
     }
 }
