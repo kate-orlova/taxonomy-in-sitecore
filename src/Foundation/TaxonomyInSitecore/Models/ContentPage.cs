@@ -1,6 +1,6 @@
 ﻿namespace Foundation.TaxonomyInSitecore.Models
 {
-    public class ContentPage
+    public class ContentPage : Taxonomy
     {
     }
 }
