@@ -6,7 +6,7 @@
 # Taxonomy in Sitecore
 Taxonomy in Sitecore module aims to support your marketing strategy and provide a consistent way of organising your content in Sitecore.
 
-Once the taxonomy tags are defined, you can easily classify your Sitecore Content Items by assigning the appropriate tags and start creating personalisation rules based on them. 
+Once the taxonomy tags are defined, you can easily classify your Sitecore Content Items by assigning the appropriate tags and start creating personalisation rules based on them. This will empower you to serve the relevant content for the target audience(s) while using Sitecore Experience Analytics to measure traffic, engagement value and outcomes.
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
