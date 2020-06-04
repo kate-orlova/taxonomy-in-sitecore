@@ -4,9 +4,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub contributors](https://img.shields.io/github/contributors/kate-orlova/taxonomy-in-sitecore)
 # Taxonomy in Sitecore
-The Taxonomy in Sitecore module ...
-TBC
+Taxonomy in Sitecore module aims to support your marketing strategy and provide a consistent way of organising your content in Sitecore.
+
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
+
 # License
 The Taxonomy in Sitecore module is released under the MIT license what means that you can modify and use it how you want even for commercial use. Please give it a star if you like it and your experience was positive.
