@@ -3,6 +3,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub contributors](https://img.shields.io/github/contributors/kate-orlova/taxonomy-in-sitecore)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/kate-orlova/taxonomy-in-sitecore)
+
 # Taxonomy in Sitecore
 Taxonomy in Sitecore module aims to support your marketing strategy and provide a consistent way of organising your content in Sitecore.
 
