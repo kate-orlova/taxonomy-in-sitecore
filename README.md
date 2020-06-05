@@ -8,7 +8,7 @@ Taxonomy in Sitecore module aims to support your marketing strategy and provide 
 
 Once the taxonomy tags are defined, you can easily classify your Sitecore Content Items by assigning the appropriate tags and start creating personalisation rules based on them. This will empower you to serve the relevant content for the target audience(s) while using Sitecore Experience Analytics to measure traffic, engagement value and outcomes.
 
-As soon as this is all setup, you can get more insights on how visitors are interacting with your website and its content.
+As soon as this is all setup, you can get more insights on how visitors are interacting with your website and its content. This is very important for your marketing strategy as you continue to learn and adjust this over time in accordance with the continual cycle: _test, learn, adjust and re-test_. 
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
