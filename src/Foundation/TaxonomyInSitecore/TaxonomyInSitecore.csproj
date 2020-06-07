@@ -73,6 +73,7 @@
     <Compile Include="Models\ContentPage.cs" />
     <Compile Include="Models\DictionaryEntry.cs" />
     <Compile Include="Models\Taxonomy.cs" />
+    <Compile Include="Pipelines\ProcessTaxonomyProfiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
