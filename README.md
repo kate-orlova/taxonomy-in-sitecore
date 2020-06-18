@@ -15,6 +15,9 @@ As soon as this is all setup, you can get more insights on how visitors are inte
 ## Flexible settings
 Taxonomy field name can be specified in a config file.
 
+## Taxonomy definition
+Taxonomy tags TBC
+
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
 
