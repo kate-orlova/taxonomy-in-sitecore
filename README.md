@@ -18,6 +18,9 @@ Taxonomy field name can be specified in a config file.
 ## Taxonomy definition
 Taxonomy tags TBC
 
+## Taxonomy Profiles
+TBC
+
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
 
