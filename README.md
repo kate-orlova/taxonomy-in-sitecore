@@ -21,6 +21,10 @@ Taxonomy tags TBC
 ## Taxonomy Profiles
 TBC
 
+## Sitecore Packages
+1. Data Templates
+2. Tags
+
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
 
