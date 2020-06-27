@@ -22,6 +22,8 @@ Taxonomy tags TBC
 TBC
 
 ## Sitecore Packages
+Sitecore packages contain:
+
 1. Data Templates
  * Programming Classification
  * Programming Language
