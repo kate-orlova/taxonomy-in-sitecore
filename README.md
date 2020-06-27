@@ -27,6 +27,9 @@ TBC
  * Programming Language
  * Programming Language Type
 2. Tags
+ * Programming Classifications
+ * Programming Language Types
+ * Programming Languages
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
