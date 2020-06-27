@@ -23,6 +23,9 @@ TBC
 
 ## Sitecore Packages
 1. Data Templates
+ * Programming Classification
+ * Programming Language
+ * Programming Language Type
 2. Tags
 
 # Contribution
