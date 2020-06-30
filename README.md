@@ -21,21 +21,27 @@ Taxonomy tags TBC
 ## Taxonomy Profiles
 TBC
 
+### Ease of management
+TBC
+
+### Pipelines
+TBC
+
 ## Sitecore Packages
 Sitecore packages contain:
 
 1. Data Templates
- * Programming Classification
- * Programming Language
- * Programming Language Type
+   - Programming Classification
+   - Programming Language
+   - Programming Language Type
 2. Tags
- * Programming Classifications
- * Programming Language Types
- * Programming Languages
+   - Programming Classifications
+   - Programming Language Types
+   - Programming Languages
 3. Profiles
- * Profile Keys
- * Profile Cards
- * Pattern Cards
+   - Profile Keys
+   - Profile Cards
+   - Pattern Cards
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
