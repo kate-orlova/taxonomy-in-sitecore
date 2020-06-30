@@ -16,7 +16,7 @@ As soon as this is all setup, you can get more insights on how visitors are inte
 Taxonomy field name can be specified in a config file.
 
 ## Taxonomy definition
-The module ships the following Taxonomy defined around the programming languages and their types & classifications:
+The module ships the following **Taxonomy** defined around the programming languages and their types & classifications:
 
 - Programming Language
      - Programming Language Type
@@ -25,7 +25,11 @@ The module ships the following Taxonomy defined around the programming languages
 _Taxonomy tags TBC_
 
 ## Taxonomy Profiles
-TBC
+Continuing the programming topic, **Sitecore Profiles**, presented in the module, are aligned with the Programming Classifications and implemented on the example of the next IT Professionals:
+- Back-End Developer
+- Front-End developer
+- Full Stack Developer
+
 
 ### Ease of management
 TBC
