@@ -16,7 +16,13 @@ As soon as this is all setup, you can get more insights on how visitors are inte
 Taxonomy field name can be specified in a config file.
 
 ## Taxonomy definition
-Taxonomy tags TBC
+The module ships the following Taxonomy defined around the programming languages and their types & classifications:
+
+- Programming Language
+     - Programming Language Type
+     - Programming Classification
+
+_Taxonomy tags TBC_
 
 ## Taxonomy Profiles
 TBC
