@@ -32,7 +32,10 @@ Sitecore packages contain:
  * Programming Classifications
  * Programming Language Types
  * Programming Languages
-3. Profiles 
+3. Profiles
+ * Profile Keys
+ * Profile Cards
+ * Pattern Cards
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
