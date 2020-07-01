@@ -4,7 +4,6 @@ using Sitecore.Analytics.Pipelines.ProcessItem;
 using Sitecore.Data.Fields;
 using Sitecore.Analytics.Data;
 using Sitecore.Data.Items;
-using System;
 
 namespace Foundation.TaxonomyInSitecore.Pipelines
 {
@@ -27,7 +26,14 @@ namespace Foundation.TaxonomyInSitecore.Pipelines
         }
         private TrackingField GetTagProfile(Item tag)
         {
-            throw new NotImplementedException();
+            if (!string.IsNullOrEmpty(tag["__Tracking"]))
+            {
+                Field field = tag.Fields["__Tracking"];
+                if (field != null)
+                    return new TrackingField(field);
+            }
+
+            return null;
         }
     }
 }
