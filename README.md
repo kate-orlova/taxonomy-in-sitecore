@@ -37,7 +37,7 @@ TBC
 ### Pipelines
 _ProcessTaxonomyProfiles_ custom pipeline hooks into _Sitecore.Analytics.Pipelines.ProcessItem.ProcessItemProcessor_ pipeline to dynamically assign the relevant Profile Cards to the context item based on the linked tags to it.
 
-The genius of this approach is that you no longer need to assign the required Profile Cards to each Content Item individually. Instead, you just need to link them to your **Taxonomy** tags and then they will be inherited automatically via tags.
+The genius of this approach is that you no longer need to assign the required Profile Cards to each Content Item individually. Instead, you just need to link them to your **Taxonomy** tags and then they will be inherited automatically via tags. As a result it will save you from the duplication of work and bring more efficiency to your content classification.
 
 ## Sitecore Packages
 Sitecore packages contain:
