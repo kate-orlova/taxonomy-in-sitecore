@@ -42,15 +42,15 @@ The genius of this approach is that you no longer need to assign the required Pr
 ## Sitecore Packages
 Sitecore packages contain:
 
-1. Data Templates
+1. **Data Templates**
    - Programming Classification
    - Programming Language
    - Programming Language Type
-2. Tags
+2. **Tags**
    - Programming Classifications
    - Programming Language Types
    - Programming Languages
-3. Profiles
+3. **Profiles**
    - Profile Keys
    - Profile Cards
    - Pattern Cards
