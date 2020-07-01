@@ -35,7 +35,7 @@ Continuing the programming topic, **Sitecore Profiles**, presented in the module
 TBC
 
 ### Pipelines
-TBC
+_ProcessTaxonomyProfiles_ custom pipeline hooks into _Sitecore.Analytics.Pipelines.ProcessItem.ProcessItemProcessor_ pipeline to dynamically assign the relevant Profile Cards to the context item based on the linked tags to it.
 
 ## Sitecore Packages
 Sitecore packages contain:
