@@ -16,26 +16,42 @@ As soon as this is all setup, you can get more insights on how visitors are inte
 Taxonomy field name can be specified in a config file.
 
 ## Taxonomy definition
-Taxonomy tags TBC
+The module ships the following **Taxonomy** defined around the programming languages and their types & classifications:
+
+- Programming Language
+     - Programming Language Type
+     - Programming Classification
+
+_Taxonomy tags TBC_
 
 ## Taxonomy Profiles
+Continuing the programming topic, **Sitecore Profiles**, presented in the module, are aligned with the Programming Classifications and implemented on the example of the next IT Professionals:
+- Back-End Developer
+- Front-End developer
+- Full Stack Developer
+
+
+### Ease of management
+TBC
+
+### Pipelines
 TBC
 
 ## Sitecore Packages
 Sitecore packages contain:
 
 1. Data Templates
- * Programming Classification
- * Programming Language
- * Programming Language Type
+   - Programming Classification
+   - Programming Language
+   - Programming Language Type
 2. Tags
- * Programming Classifications
- * Programming Language Types
- * Programming Languages
+   - Programming Classifications
+   - Programming Language Types
+   - Programming Languages
 3. Profiles
- * Profile Keys
- * Profile Cards
- * Pattern Cards
+   - Profile Keys
+   - Profile Cards
+   - Pattern Cards
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
