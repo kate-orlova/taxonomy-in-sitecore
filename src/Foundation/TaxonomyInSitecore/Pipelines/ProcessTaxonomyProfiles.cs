@@ -2,6 +2,9 @@
 using Sitecore.Diagnostics;
 using Sitecore.Analytics.Pipelines.ProcessItem;
 using Sitecore.Data.Fields;
+using Sitecore.Analytics.Data;
+using Sitecore.Data.Items;
+using System;
 
 namespace Foundation.TaxonomyInSitecore.Pipelines
 {
@@ -16,8 +19,15 @@ namespace Foundation.TaxonomyInSitecore.Pipelines
 
             foreach (var tag in taxonomyField.GetItems())
             {
-                //TODO: assign tag Profile Cards to the context item
+                // assign tag Profiles to the context item
+                TrackingField tagTrackingField = GetTagProfile(tag);
+                if (tagTrackingField != null)
+                    args.TrackingParameters.Add(tagTrackingField);
             }
+        }
+        private TrackingField GetTagProfile(Item tag)
+        {
+            throw new NotImplementedException();
         }
     }
 }
