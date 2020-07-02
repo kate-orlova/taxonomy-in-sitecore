@@ -39,6 +39,8 @@ _ProcessTaxonomyProfiles_ custom pipeline hooks into _Sitecore.Analytics.Pipelin
 
 The genius of this approach is that you no longer need to assign the required Profile Cards to each Content Item individually. Instead, you just need to link them to your **Taxonomy** tags and then they will be inherited automatically via tags. As a result it will save you from the duplication of work and bring more efficiency to your content classification.
 
+Note, that there is no need to create a physical linkage between your Content Items and Profiles Cards as you can associate the required Profile Cards to Content Items during the _ProcessItemProcessor_ pipeline execution.
+
 ## Sitecore Packages
 Sitecore packages contain:
 
