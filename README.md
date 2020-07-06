@@ -46,6 +46,7 @@ Sitecore packages contain:
    - Programming Classification
    - Programming Language
    - Programming Language Type
+![Data Templates](/assets/data%20templates.png)
 2. **Tags**
    - Programming Classifications
    - Programming Language Types
