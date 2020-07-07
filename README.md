@@ -51,6 +51,7 @@ Sitecore packages contain:
    - Programming Classifications
    - Programming Language Types
    - Programming Languages
+![Tags](/assets/tags.png)
 3. **Profiles**
    - Profile Keys
    - Profile Cards
