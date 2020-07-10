@@ -1,5 +1,4 @@
-﻿
-namespace Foundation.TaxonomyInSitecore.Configuration
+﻿namespace Foundation.TaxonomyInSitecore.Configuration
 {
     public static class Constants
     {
