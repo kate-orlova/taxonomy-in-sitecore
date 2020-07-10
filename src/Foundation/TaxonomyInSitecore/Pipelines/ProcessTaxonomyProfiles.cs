@@ -4,6 +4,7 @@ using Sitecore.Analytics.Pipelines.ProcessItem;
 using Sitecore.Data.Fields;
 using Sitecore.Analytics.Data;
 using Sitecore.Data.Items;
+using Foundation.TaxonomyInSitecore.Configuration;
 
 namespace Foundation.TaxonomyInSitecore.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Foundation.TaxonomyInSitecore.Pipelines
             Assert.ArgumentNotNull(args, "args");
             var item = Context.Item;
 
-            var taxonomyField = (MultilistField)item.Fields["Programming Language"];
+            var taxonomyField = (MultilistField)item.Fields[ConfigSettings.TaxonomyField];
 
             foreach (var tag in taxonomyField.GetItems())
             {
