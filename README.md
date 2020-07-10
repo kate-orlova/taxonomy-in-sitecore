@@ -12,9 +12,6 @@ Once the taxonomy tags are defined, you can easily classify your Sitecore Conten
 
 As soon as this is all setup, you can get more insights on how visitors are interacting with your website and its content. This is very important for your marketing strategy as you continue to learn and adjust this over time in accordance with the continual cycle: _test, learn, adjust and re-test_. 
 
-## Flexible settings
-Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_. 
-
 ## Taxonomy definition
 The module ships the following **Taxonomy** defined around the programming languages and their types & classifications:
 
@@ -22,7 +19,13 @@ The module ships the following **Taxonomy** defined around the programming langu
      - Programming Language Type
      - Programming Classification
 
+_Content template TBC_
+
 _Taxonomy tags TBC_
+
+## Flexible settings
+Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_, so that you can easily reference to your custom taxonomy field.
+
 
 ## Taxonomy Profiles
 Continuing the programming topic, **Sitecore Profiles**, presented in the module, are aligned with the Programming Classifications and implemented on the example of the next IT Professionals:
