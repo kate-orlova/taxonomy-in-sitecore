@@ -19,9 +19,8 @@ The module ships the following **Taxonomy** defined around the programming langu
      - Programming Language Type
      - Programming Classification
 
-_Content template TBC_
-
-_Taxonomy tags TBC_
+A base Content template has a _"Programming Language" Multilist with Search_ field to assign the relevant **Taxonomy** tags.
+![Taxonomy Field](/assets/taxonomy%20field.png)
 
 ## Flexible settings
 Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_, so that you can easily reference to your custom taxonomy field.
