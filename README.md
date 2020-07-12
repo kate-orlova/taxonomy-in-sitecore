@@ -34,6 +34,7 @@ Continuing the programming topic, **Sitecore Profiles**, presented in the module
 - Front-End developer
 - Full Stack Developer
 
+Then the predefined **Profile Cards** are being associated to programming language **Tags**. ![Tag Profile Card](/assets/tag%20profile%20card.png)
 
 ### Pipelines
 _ProcessTaxonomyProfiles_ custom pipeline hooks into _Sitecore.Analytics.Pipelines.ProcessItem.ProcessItemProcessor_ pipeline to dynamically assign the relevant Profile Cards to the context item based on the linked tags to it.
