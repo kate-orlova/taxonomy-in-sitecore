@@ -1,3 +1,5 @@
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kate-orlova/taxonomy-in-sitecore)
+[![GitHub release](https://img.shields.io/github/release-date/kate-orlova/taxonomy-in-sitecore.svg?style=flat)](https://github.com/kate-orlova/taxonomy-in-sitecore/releases/tag/v1.0)
 [![GitHub license](https://img.shields.io/github/license/kate-orlova/taxonomy-in-sitecore.svg)](https://github.com/kate-orlova/taxonomy-in-sitecore/blob/master/LICENSE)
 ![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
@@ -19,9 +21,8 @@ The module ships the following **Taxonomy** defined around the programming langu
      - Programming Language Type
      - Programming Classification
 
-_Content template TBC_
-
-_Taxonomy tags TBC_
+A base Content template has a _"Programming Language" Multilist with Search_ field to assign the relevant **Taxonomy** tags.
+![Taxonomy Field](/assets/taxonomy%20field.png)
 
 ## Flexible settings
 Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_, so that you can easily reference to your custom taxonomy field.
