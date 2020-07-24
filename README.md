@@ -65,6 +65,7 @@ Sitecore packages contain:
 
 # How to Install
 1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
+1. Define your Taxonomy structure;
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
