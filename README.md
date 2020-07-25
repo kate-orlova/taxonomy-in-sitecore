@@ -65,9 +65,10 @@ Sitecore packages contain:
 
 # How to Install
 1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
-1. Define your Taxonomy structure;
+1. Define your **Taxonomy** structure;
 1. Create relevant to you _Data Templates_ in your Sitecore instance on the example of the attached ones in `Taxonomy Data Templates-1.0.zip` package;
-1. Populate your Taxonomy with the relevant tags;
+1. Populate your **Taxonomy** with the relevant tags;
+1. Create _Profiles_ and assign them to tags;
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
