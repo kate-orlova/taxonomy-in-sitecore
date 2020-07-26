@@ -69,7 +69,7 @@ Sitecore packages contain:
 1. Create _Data Templates_ relevant to your **Taxonomy** structure in your Sitecore instance on the example of the attached ones in the `Taxonomy Data Templates-1.0.zip` package;
 1. Populate your **Taxonomy** with the relevant tags;
 1. Create _Profiles_ and assign them to tags;
-1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`.
+1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder; 
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
