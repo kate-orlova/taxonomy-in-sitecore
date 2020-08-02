@@ -14,7 +14,7 @@ Once the taxonomy tags are defined, you can easily classify your Sitecore Conten
 
 As soon as this is all setup, you can get more insights on how visitors are interacting with your website and its content. This is very important for your marketing strategy as you continue to learn and adjust this over time in accordance with the continual cycle: _test, learn, adjust and re-test_. 
 
-## Taxonomy definition
+## Taxonomy Definition
 The module ships the following **Taxonomy** defined around the programming languages and their types & classifications:
 
 - Programming Language
@@ -24,7 +24,7 @@ The module ships the following **Taxonomy** defined around the programming langu
 A base Content template has a _"Programming Language" Multilist with Search_ field to assign the relevant **Taxonomy** tags.
 ![Taxonomy Field](/assets/taxonomy%20field.png)
 
-## Flexible settings
+## Flexible Settings
 Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_, so that you can easily reference to your custom taxonomy field.
 
 
@@ -34,13 +34,14 @@ Continuing the programming topic, **Sitecore Profiles**, presented in the module
 - Front-End developer
 - Full Stack Developer
 
+Then the predefined **Profile Cards** are being associated to programming language **Tags**. ![Tag Profile Card](/assets/tag%20profile%20card.png)
 
 ### Pipelines
 _ProcessTaxonomyProfiles_ custom pipeline hooks into _Sitecore.Analytics.Pipelines.ProcessItem.ProcessItemProcessor_ pipeline to dynamically assign the relevant Profile Cards to the context item based on the linked tags to it.
 
 Note, that there is no need to create a physical linkage between your Content Items and Profiles Cards as you can associate the required Profile Cards to Content Items and score the latter during the _ProcessItemProcessor_ pipeline execution.
 
-### Ease of management
+### Ease of Management
 The genius of this approach is that you no longer need to assign the required Profile Cards to each Content Item individually. Instead, you just need to link them to your **Taxonomy** tags and then they will be inherited automatically via tags. As a result it will save you from the duplication of work and bring more efficiency to your content classification.
 
 ## Sitecore Packages
@@ -61,6 +62,15 @@ Sitecore packages contain:
    - Profile Cards
    - Pattern Cards
 ![Profiles](/assets/profiles.png)
+
+# How to Install
+1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
+1. Define your **Taxonomy** structure;
+1. Create _Data Templates_ relevant to your **Taxonomy** structure in your Sitecore instance on the example of the attached ones in the `Taxonomy Data Templates-1.0.zip` package;
+1. Populate your **Taxonomy** with the relevant tags;
+1. Create _Profiles_ and assign them to tags accordingly;
+1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
+1. Assign the relevant tags to your content items and enjoy.
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
