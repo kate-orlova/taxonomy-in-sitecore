@@ -62,6 +62,7 @@ Sitecore packages contain:
    - Profile Cards
    - Pattern Cards
 ![Profiles](/assets/profiles.png)
+![Back-end Profile Card](/assets/back-end%20profile%20card.png)
 
 # How to Install
 1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
