@@ -25,7 +25,7 @@ A base Content template has a _"Programming Language" Multilist with Search_ fie
 ![Taxonomy Field](/assets/taxonomy%20field.png)
 
 ## Flexible Settings
-Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in _..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config_, so that you can easily reference to your custom taxonomy field.
+Taxonomy field name can be specified in a config file. There is a _TaxonomyField_ setting in `..\src\Foundation\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config`, so that you can easily reference to your custom taxonomy field.
 
 
 ## Taxonomy Profiles
