@@ -58,11 +58,11 @@ Sitecore packages contain:
    - Programming Languages
 ![Tags](/assets/tags.png)
 3. **Profiles**
-   - Profile Keys
-   - Profile Cards
-   - Pattern Cards
 ![Profiles](/assets/profiles.png)
+- Profile Keys
+   - Profile Cards
 ![Back-end Profile Card](/assets/back-end%20profile%20card.png)
+   - Pattern Cards
 ![Back-end Pattern Card](/assets/back-end%20pattern%20card.png)
 
 # How to Install
