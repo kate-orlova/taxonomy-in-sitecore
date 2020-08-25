@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Foundation.TaxonomyInSitecore.Extensions
@@ -18,6 +19,15 @@ namespace Foundation.TaxonomyInSitecore.Extensions
             }
 
             return value.Split(new[] {separator}, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        public static List<Guid> ToGuidList(this string value, string separator = "|")
+        {
+            return value.SafeSplit(separator)
+                .Select(x => x.NotEmpty() ? x.Trim() : string.Empty)
+                .Where(x => Guid.TryParse(x, out _))
+                .Select(Guid.Parse)
+                .ToList();
         }
     }
 }
