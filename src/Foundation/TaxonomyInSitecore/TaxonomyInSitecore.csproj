@@ -417,6 +417,7 @@
   <ItemGroup>
     <Compile Include="Configuration\ConfigSettings.cs" />
     <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="Extensions\GuidExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Models\ContentPage.cs" />
