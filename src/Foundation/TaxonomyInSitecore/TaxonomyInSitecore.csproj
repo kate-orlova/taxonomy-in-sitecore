@@ -418,6 +418,7 @@
     <Compile Include="Configuration\ConfigSettings.cs" />
     <Compile Include="Configuration\Constants.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Models\ContentPage.cs" />
     <Compile Include="Models\DictionaryEntry.cs" />
     <Compile Include="Models\Taxonomy.cs" />
