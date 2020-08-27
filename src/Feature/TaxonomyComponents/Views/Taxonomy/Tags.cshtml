@@ -1,1 +1,15 @@
-﻿
+﻿@using Sitecore.Mvc
+@using Sitecore.Data.Items
+@using Foundation.TaxonomyInSitecore.Configuration;
+
+@{
+    Sitecore.Data.Fields.MultilistField multiselectField = Sitecore.Context.Item.Fields[ConfigSettings.TaxonomyField];
+    Sitecore.Data.Items.Item[] tags = multiselectField.GetItems();
+}
+@if (tags.Any())
+{
+    foreach (Item tag in tags)
+    {
+        <span>@tag.Name</span>
+    }
+}
