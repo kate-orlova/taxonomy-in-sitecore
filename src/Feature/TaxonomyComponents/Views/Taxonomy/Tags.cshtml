@@ -10,6 +10,6 @@
 {
     foreach (Item tag in tags)
     {
-        <span>@tag.Name</span>
+		Html.RenderPartial("~/Views/Taxonomy/Tag.cshtml", tag);
     }
 }
