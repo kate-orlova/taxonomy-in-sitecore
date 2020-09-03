@@ -75,6 +75,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Taxonomy\Tags.cshtml" />
+    <Content Include="Views\Taxonomy\Tag.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
