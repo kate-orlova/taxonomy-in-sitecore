@@ -421,6 +421,7 @@
   <ItemGroup>
     <Compile Include="Configuration\ConfigSettings.cs" />
     <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="Controllers\TaxonomyController.cs" />
     <Compile Include="Models\ContentPage.cs" />
     <Compile Include="Models\DictionaryEntry.cs" />
     <Compile Include="Models\Taxonomy.cs" />
