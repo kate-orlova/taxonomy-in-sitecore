@@ -62,7 +62,7 @@ Sitecore packages contain:
 ![Tags](/assets/tags.png)
 3. **Profiles**
 ![Profiles](/assets/profiles.png)
-- Profile Keys
+   - Profile Keys
    - Profile Cards
 ![Back-end Profile Card](/assets/back-end%20profile%20card.png)
    - Pattern Cards
