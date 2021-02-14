@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Data.Items
+@using Foundation.TaxonomyInSitecore.Configuration
+@using Foundation.TaxonomyInSitecore.Models
+@model ContentPage
+@if (Model.Tags.Any())
+{
+    foreach (Item tag in Model.Tags)
+    {
+		Html.RenderPartial("~/Views/Taxonomy/Tag.cshtml", tag);
+    }
+}
