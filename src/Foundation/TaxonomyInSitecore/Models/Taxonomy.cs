@@ -1,4 +1,6 @@
-﻿namespace Foundation.TaxonomyInSitecore.Models
+﻿using Foundation.TaxonomyInSitecore.Configuration;
+
+namespace Foundation.TaxonomyInSitecore.Models
 {
     public class Taxonomy
     {
@@ -16,6 +18,24 @@
                 {
                     _contextItem = Sitecore.Context.Item;
                     return _contextItem;
+                }
+            }
+        }
+        public virtual Sitecore.Data.Items.Item[] Tags
+        {
+            get
+            {
+                if (_tags != null)
+                {
+                    return _tags;
+                }
+                else
+                {
+
+                    Sitecore.Data.Fields.MultilistField multiselectField = this.ContextItem.Fields[ConfigSettings.TaxonomyField];
+
+                    _tags = multiselectField.GetItems();
+                    return _tags;
                 }
             }
         }
