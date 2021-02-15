@@ -75,7 +75,7 @@ Sitecore packages contain:
 1. Populate your **Taxonomy** with the relevant tags;
 1. Create _Profiles_ and assign them to tags accordingly;
 1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
-1. Assign the relevant tags to your content items and enjoy.
+1. Assign the relevant tags to your content items. Adapt _Renderings_ from the enclosed `Taxonomy Views-1.1.zip` package where applicable to render the relevant tags in the front-end for the _Context Item_. Enjoy!
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
