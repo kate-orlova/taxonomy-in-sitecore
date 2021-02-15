@@ -1,19 +1,15 @@
-﻿using System.Web.Mvc;
-using Foundation.TaxonomyInSitecore.Configuration;
+﻿using Sitecore.Mvc.Controllers;
+using System.Web.Mvc;
+using Foundation.TaxonomyInSitecore.Models;
 
 namespace Foundation.TaxonomyInSitecore.Controllers
 {
-    public class TaxonomyController : Controller
+    public class TaxonomyController : SitecoreController
     {
-        public ActionResult Index()
+        public override ActionResult Index()
         {
-            var currentPage = Sitecore.Context.Item;
-            Sitecore.Data.Items.Item myItem = (Sitecore.Data.Items.Item) currentPage;
-
-            Sitecore.Data.Fields.MultilistField multiselectField = myItem.Fields[ConfigSettings.TaxonomyField];
-
-            Sitecore.Data.Items.Item[] tags = multiselectField.GetItems();
-            return View("~/Views/Taxonomy/Tags2.cshtml", tags);
+            var Model = new ContentPage();
+            return View("~/Views/Taxonomy/TagList.cshtml", Model);
         }
     }
 }
