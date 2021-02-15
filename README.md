@@ -45,7 +45,7 @@ Note, that there is no need to create a physical linkage between your Content It
 The genius of this approach is that you no longer need to assign the required Profile Cards to each Content Item individually. Instead, you just need to link them to your **Taxonomy** tags and then they will be inherited automatically via tags. As a result it will save you from the duplication of work and bring more efficiency to your content classification.
 
 ### Taxonomy Components
-**Tags** _View Rendering_ `..\src\Feature\TaxonomyComponents\Views\Taxonomy\Tags.cshtml` and **TagList** _Controller Rendering_ `..\src\Feature\TaxonomyComponents\Views\Taxonomy\TagList.cshtml` list all tags assigned to an Item.
+**Tags** _View Rendering_ `..\src\Feature\TaxonomyComponents\Views\Taxonomy\Tags.cshtml` and **TagList** _Controller Rendering_ `..\src\Feature\TaxonomyComponents\Views\Taxonomy\TagList.cshtml` list all tags assigned to an Item. Depending on your specific project requirements you can use either one.
 
 ## Sitecore Packages
 Sitecore packages contain:
