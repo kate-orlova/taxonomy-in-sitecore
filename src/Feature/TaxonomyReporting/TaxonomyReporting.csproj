@@ -399,6 +399,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Content Include="App_Config\Include\TaxonomyReporting.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
