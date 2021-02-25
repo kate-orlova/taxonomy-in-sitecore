@@ -402,5 +402,11 @@
     <Content Include="App_Config\Include\TaxonomyReporting.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\TaxonomyInSitecore\TaxonomyInSitecore.csproj">
+      <Project>{65f9fc9d-9ca4-4476-bfa5-f2b1264cb1cb}</Project>
+      <Name>TaxonomyInSitecore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
