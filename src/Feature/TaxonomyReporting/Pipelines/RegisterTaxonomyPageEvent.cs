@@ -18,19 +18,15 @@ namespace TaxonomyReporting.Pipelines
 
             var tagNames = GetTagNames(Sitecore.Context.Item);
 
-            var eventItem = Sitecore.Analytics.Tracker.MarketingDefinitions.Goals[TaxonomyPageViewEvent.EventDefinitionId];
-
-            if (eventItem != null)
+            var pageData = new Sitecore.Analytics.Data.PageEventData("Taxonomy Page View", TaxonomyPageViewEvent.EventDefinitionId)
             {
-                var pageData = new Sitecore.Analytics.Data.PageEventData(eventItem.Alias, eventItem.Id)
-                {
-                    Data = tagNames,
-                    Text = "Viewed page tagged with taxonomy",
-                    DataKey = "TagNames"
-                };
+                Data = tagNames,
+                Text = "Viewed page tagged with taxonomy",
+                DataKey = "TagNames"
+            };
 
-                args.Interaction.CurrentPage.Register(pageData);
-            }
+            args.Interaction.CurrentPage.Register(pageData);
+            
         }
 
         protected string GetTagNames(Item item)
