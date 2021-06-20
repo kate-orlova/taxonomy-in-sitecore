@@ -11,7 +11,7 @@ namespace TaxonomyReporting.Models
             TaxonomyTags = taxonomyTags;
         }
 
-        public static readonly Guid EventDefinitionId = new Guid("FCFA9424-0558-4892-AB30-BB70B9F51866");
+        public static readonly Guid EventDefinitionId = new Guid("B665209F-6AE3-413B-97CC-2E9A9B3DD276");
 
         public List<string> TaxonomyTags { get; set; }
     }
