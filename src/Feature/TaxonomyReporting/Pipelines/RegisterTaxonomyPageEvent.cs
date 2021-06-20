@@ -4,6 +4,7 @@ using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Sitecore.Diagnostics;
 using System.Linq;
+using TaxonomyReporting.Models;
 
 namespace TaxonomyReporting.Pipelines
 {
@@ -12,8 +13,24 @@ namespace TaxonomyReporting.Pipelines
         public override void Process(ProcessItemArgs args)
         {
             Assert.ArgumentNotNull((object)args, nameof(args));
+            Assert.ArgumentNotNull((object)args.Interaction, nameof(args.Interaction));
+            Assert.IsNotNull((object)args.Interaction.CurrentPage, "The current page of the specified interaction is not initialized.");
 
-            var tagNames = GetTagNames(Sitecore.Context.Item);            
+            var tagNames = GetTagNames(Sitecore.Context.Item);
+
+            var eventItem = Sitecore.Analytics.Tracker.MarketingDefinitions.Goals[TaxonomyPageViewEvent.EventDefinitionId];
+
+            if (eventItem != null)
+            {
+                var pageData = new Sitecore.Analytics.Data.PageEventData(eventItem.Alias, eventItem.Id)
+                {
+                    Data = tagNames,
+                    Text = "Viewed page tagged with taxonomy",
+                    DataKey = "TagNames"
+                };
+
+                args.Interaction.CurrentPage.Register(pageData);
+            }
         }
 
         protected string GetTagNames(Item item)

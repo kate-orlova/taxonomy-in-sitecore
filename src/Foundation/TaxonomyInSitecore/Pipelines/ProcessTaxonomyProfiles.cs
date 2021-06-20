@@ -17,12 +17,15 @@ namespace Foundation.TaxonomyInSitecore.Pipelines
 
             var taxonomyField = (MultilistField)item.Fields[ConfigSettings.TaxonomyField];
 
-            foreach (var tag in taxonomyField.GetItems())
+            if (taxonomyField != null)
             {
-                // assign tag Profiles to the context item
-                TrackingField tagTrackingField = GetTagProfile(tag);
-                if (tagTrackingField != null)
-                    args.TrackingParameters.Add(tagTrackingField);
+                foreach (var tag in taxonomyField.GetItems())
+                {
+                    // assign tag Profiles to the context item
+                    TrackingField tagTrackingField = GetTagProfile(tag);
+                    if (tagTrackingField != null)
+                        args.TrackingParameters.Add(tagTrackingField);
+                }
             }
         }
         private TrackingField GetTagProfile(Item tag)
