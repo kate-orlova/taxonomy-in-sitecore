@@ -8,7 +8,7 @@ CREATE TABLE [dbo].[Fact_TaxonomyMetrics](
      [FilterId] [uniqueidentifier] NULL,
             -- Dimension specific metric columns
      [Visits] [int] NOT NULL,
-     [EngagementValue] [int] NOT NULL
+     [EngagementValue] [int] NOT NULL,
 CONSTRAINT [PK_Fact_TaxonomyMetrics_1] PRIMARY KEY CLUSTERED 
      (
      [SegmentRecordId] ASC
