@@ -396,6 +396,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregation\TagFactCalculator.cs" />
     <Compile Include="Aggregation\TaxonomyResolver.cs" />
     <Compile Include="Models\TaxonomyMetrics.cs" />
     <Compile Include="Models\TaxonomyPageViewEvent.cs" />
