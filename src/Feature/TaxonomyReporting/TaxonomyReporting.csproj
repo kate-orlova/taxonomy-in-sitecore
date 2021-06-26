@@ -202,6 +202,9 @@
     <Reference Include="Sitecore.ContentSearch.Linq, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.ContentSearch.Linq.9.3.0\lib\net471\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.ExperienceAnalytics.Aggregation">
+      <HintPath>..\..\..\packages\Sitecore.ExperienceAnalytics.Aggregation.9.3.0\lib\net471\Sitecore.ExperienceAnalytics.Aggregation.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Framework.Conditions, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Sitecore.Framework.Conditions.4.0.0\lib\netstandard2.0\Sitecore.Framework.Conditions.dll</HintPath>
     </Reference>
@@ -393,6 +396,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\TaxonomyMetrics.cs" />
     <Compile Include="Models\TaxonomyPageViewEvent.cs" />
     <Compile Include="Pipelines\RegisterTaxonomyPageEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
