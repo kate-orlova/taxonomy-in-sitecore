@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Sitecore.Analytics.Aggregation;
 using Sitecore.ExperienceAnalytics.Aggregation.FlexibleMetrics.Framework.Grouping;
-using Sitecore.XConnect.Collection.Model;
 using TaxonomyReporting.Models;
 
 namespace TaxonomyReporting.Aggregation
@@ -16,22 +16,26 @@ namespace TaxonomyReporting.Aggregation
                 throw new ArgumentNullException(nameof(context));
             }
 
-            var browserData = context.Interaction.WebVisit()?.Browser;
-            var events = context.Interaction.Events;
             var occurrences = new List<VisitGroupMeasurement<string>>();
-
-            if (events != null)
+            var events = context.Interaction.Events.Where(e => e.DefinitionId == TaxonomyPageViewEvent.EventDefinitionId && !string.IsNullOrEmpty(e.Data));
+            /*var list = events.Select(e => new
             {
-                foreach (var interactionEvent in events)
+                Key = e.Data,
+                ParentId = e.ParentEventId
+            }).GroupBy(e => e.Key).ToList();
+
+            list.Select(groupedTags =>
+                new VisitGroupMeasurement<string>(new VisitGroup(groupedTags.Key, true), groupedTags.Select(s => s.Key)));*/
+
+            foreach (var interactionEvent in events)
+            {
+                if (interactionEvent.DefinitionId == TaxonomyPageViewEvent.EventDefinitionId &&
+                    !string.IsNullOrEmpty(interactionEvent.Data))
                 {
-                    if (interactionEvent.DefinitionId == TaxonomyPageViewEvent.EventDefinitionId &&
-                        !string.IsNullOrEmpty(interactionEvent.Data))
+                    var tagNames = interactionEvent.Data.Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var tagName in tagNames)
                     {
-                        var tagNames = interactionEvent.Data.Split(new []{"|"}, StringSplitOptions.RemoveEmptyEntries);
-                        foreach (var tagName in tagNames)
-                        {
-                            occurrences.Add(new VisitGroupMeasurement<string>(new VisitGroup(tagName), new []{ tagName }));
-                        }
+                        occurrences.Add(new VisitGroupMeasurement<string>(new VisitGroup(tagName), new[] { tagName }));
                     }
                 }
             }
