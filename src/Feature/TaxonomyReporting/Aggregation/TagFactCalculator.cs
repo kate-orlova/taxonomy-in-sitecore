@@ -1,11 +1,6 @@
 ﻿using Sitecore.Analytics.Aggregation;
 using Sitecore.ExperienceAnalytics.Aggregation.FlexibleMetrics.Framework.FactCalculation;
 using Sitecore.ExperienceAnalytics.Aggregation.FlexibleMetrics.Framework.Grouping;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TaxonomyReporting.Models;
 
 namespace TaxonomyReporting.Aggregation
