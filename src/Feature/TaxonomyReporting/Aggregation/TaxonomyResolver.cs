@@ -18,14 +18,6 @@ namespace TaxonomyReporting.Aggregation
 
             var occurrences = new List<VisitGroupMeasurement<string>>();
             var events = context.Interaction.Events.Where(e => e.DefinitionId == TaxonomyPageViewEvent.EventDefinitionId && !string.IsNullOrEmpty(e.Data));
-            /*var list = events.Select(e => new
-            {
-                Key = e.Data,
-                ParentId = e.ParentEventId
-            }).GroupBy(e => e.Key).ToList();
-
-            list.Select(groupedTags =>
-                new VisitGroupMeasurement<string>(new VisitGroup(groupedTags.Key, true), groupedTags.Select(s => s.Key)));*/
 
             foreach (var interactionEvent in events)
             {
