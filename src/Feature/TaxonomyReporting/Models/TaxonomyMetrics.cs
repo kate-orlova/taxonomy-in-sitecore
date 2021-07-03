@@ -19,7 +19,7 @@ namespace TaxonomyReporting.Models
             return new T
             {
                 Visits = Visits + other.Visits,
-                EngagementValue = other.EngagementValue
+                EngagementValue = EngagementValue + other.EngagementValue
             };
         }
     }
