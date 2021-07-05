@@ -67,6 +67,30 @@ Sitecore packages contain:
 ![Back-end Profile Card](/assets/back-end%20profile%20card.png)
    - Pattern Cards
 ![Back-end Pattern Card](/assets/back-end%20pattern%20card.png)
+4. **Views**
+5. **Dimension**
+6. **Event**
+7. **Reports**
+
+## SQL Package
+SQL package (`../SQL scripts/`) contains the following script to support the taxonomy custom metric:
+1. `Fact_TaxonomyMetrics.sql` - creates a custom table in SQL;
+2. `TaxonomyMetrics_Type.sql` - creates a type to manipulate the data in the custom table;
+3. `Add_TaxonomyMetrics_Tvp.sql` - creates a stored procedure.
+
+# Reporting
+**TaxonomyReporting** project
+
+`..\Aggregation\TagFactCalculator.cs` 
+
+`..\Aggregation\TaxonomyResolver.cs` 
+
+`..\Models\TaxonomyMetrics.cs`
+
+`..\Models\TaxonomyPageViewEvent.cs` 
+
+
+TBC...
 
 # How to Install
 1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
@@ -76,9 +100,6 @@ Sitecore packages contain:
 1. Create _Profiles_ and assign them to tags accordingly;
 1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
 1. Assign the relevant tags to your content items. Adapt _Renderings_ from the enclosed `Taxonomy Views-1.1.zip` package where applicable to render the relevant tags in the front-end for the _Context Item_. Enjoy!
-
-# Reporting
-TBC...
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
