@@ -18,7 +18,7 @@ namespace TaxonomyReporting.Pipelines
 
             var tagNames = GetTagNames(Sitecore.Context.Item);
 
-            var pageData = new Sitecore.Analytics.Data.PageEventData("Taxonomy Page View", TaxonomyPageViewEvent.EventDefinitionId)
+            var pageData = new Sitecore.Analytics.Data.PageEventData("Taxonomy Page View", Configuration.ConfigSettings.TaxonomyPageViewEventId)
             {
                 Data = tagNames,
                 Text = "Viewed page tagged with taxonomy",

@@ -64,8 +64,8 @@
   <ItemGroup>
     <Compile Include="Aggregation\TagFactCalculator.cs" />
     <Compile Include="Aggregation\TaxonomyResolver.cs" />
+    <Compile Include="Configuration\ConfigSettings.cs" />
     <Compile Include="Models\TaxonomyMetrics.cs" />
-    <Compile Include="Models\TaxonomyPageViewEvent.cs" />
     <Compile Include="Pipelines\RegisterTaxonomyPageEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
