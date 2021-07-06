@@ -73,7 +73,7 @@ Sitecore packages contain:
 7. **Reports**
 
 ## SQL Package
-SQL package (`../SQL scripts/`) contains the following script to support the taxonomy custom metric:
+SQL package (`../SQL scripts/`) contains the following script to support the taxonomy custom metric; when executing, follow the order they are listed below to make sure that the required SQL entities are present:
 1. `Fact_TaxonomyMetrics.sql` - creates a custom table in SQL;
 2. `TaxonomyMetrics_Type.sql` - creates a type to manipulate the data in the custom table;
 3. `Add_TaxonomyMetrics_Tvp.sql` - creates a stored procedure.
@@ -99,7 +99,16 @@ TBC...
 1. Populate your **Taxonomy** with the relevant tags;
 1. Create _Profiles_ and assign them to tags accordingly;
 1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
-1. Assign the relevant tags to your content items. Adapt _Renderings_ from the enclosed `Taxonomy Views-1.1.zip` package where applicable to render the relevant tags in the front-end for the _Context Item_. Enjoy!
+1. Assign the relevant tags to your content items. Adapt _Renderings_ from the enclosed `Taxonomy Views-1.1.zip` package where applicable to render the relevant tags in the front-end for the _Context Item_.
+1. Execute SQL-scripts from the SQL package (`../SQL scripts/`) for the **Reporting** DB; note that the executiuon order is important and please follow the order the scripts are listed above to make sure that the required table and type is created before calling it;
+1. Configure a custom _Dimension_ and a _Metric_ for a _Tag_ visit and its engagement value to support a custom report on Taxonomy performance (all configuration items are enclosed as Sitecore packages):
+  - in **Master** DB via the _Marketing Control Panel_
+    - `/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By taxonomy`
+    - `/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By taxonomy/All visits by taxonomy`
+  - in **Core** DB
+    - `/sitecore/client/Applications/ExperienceAnalytics/Common/System/ChartFields/FlexibleMetrics/Engagement value`
+3. Deploy _Page Events_ and _Segments_ via _Control Panel -> Deploy marketing definitions_
+4. Enjoy!
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
