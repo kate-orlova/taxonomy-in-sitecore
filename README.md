@@ -79,18 +79,22 @@ SQL package (`../SQL scripts/`) contains the following script to support the tax
 3. `Add_TaxonomyMetrics_Tvp.sql` - creates a stored procedure.
 
 # Reporting
-**TaxonomyReporting** project
+**TaxonomyReporting** project implements a custom Taxonomy report to review the overall tags performance and drill down to the individual tags - see the total number of visits and engagement value:
 
-`..\Aggregation\TagFactCalculator.cs` 
+_Taxonomy report for top tags_
+![Taxonomy report for top tags](/assets/taxonomy%20report%20for%20top%20tags.jpg)
 
-`..\Aggregation\TaxonomyResolver.cs` 
+_Individual tag performance_
+![Individual tag performance](/assets/taxonomy%20tag%20performance.jpg)
 
-`..\Models\TaxonomyMetrics.cs`
+The implementation of the custom report consists of the below classes:
+ - `..\Models\TaxonomyMetrics.cs` defines a model for the taxonomy dimension and metrics;
 
-`..\Models\TaxonomyPageViewEvent.cs` 
+ - `..\Aggregation\TagFactCalculator.cs` calculates the values of individual metrics defined in the `TaxonomyMetrics` model, for example, number of visits and engagement value;
 
+ - `..\Aggregation\TaxonomyResolver.cs` extends the `IGroupResolver<T>` interface to determine tags associated with a visit and group records for dimension while implementing the `MeasureGroupOccurrences()` method;
 
-TBC...
+ - `..\Pipelines\RegisterTaxonomyPageEvent.cs` registers an event with tags associated with a visited page and store it in xDB.
 
 # How to Install
 1. Include the _TaxonomyInSitecore_ project to your Visual Studio solution;
@@ -98,7 +102,7 @@ TBC...
 1. Create _Data Templates_ relevant to your **Taxonomy** structure in your Sitecore instance on the example of the attached ones in the `Taxonomy Data Templates-1.0.zip` package;
 1. Populate your **Taxonomy** with the relevant tags;
 1. Create _Profiles_ and assign them to tags accordingly;
-1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
+1. Add a _Taxonomy field_ to your content _Data Templates_ and configure the _ProcessTaxonomyProfiles_ custom pipeline by adding your _Taxonomy field_ reference to `..\TaxonomyInSitecore\App_Config\Include\TaxonomyInSitecore.config`. Make sure that the config file is deployed to your Sitecore destination folder;
 1. Assign the relevant tags to your content items. Adapt _Renderings_ from the enclosed `Taxonomy Views-1.1.zip` package where applicable to render the relevant tags in the front-end for the _Context Item_.
 1. Execute SQL-scripts from the SQL package (`../SQL scripts/`) for the **Reporting** DB; note that the executiuon order is important and please follow the order the scripts are listed above to make sure that the required table and type is created before calling it;
 1. Configure a custom _Dimension_ and a _Metric_ for a _Tag_ visit and its engagement value to support a custom report on Taxonomy performance (all configuration items are enclosed as Sitecore packages):
@@ -107,8 +111,10 @@ TBC...
     - `/sitecore/system/Marketing Control Panel/Experience Analytics/Dimensions/Visits/By taxonomy/All visits by taxonomy`
   - in **Core** DB
     - `/sitecore/client/Applications/ExperienceAnalytics/Common/System/ChartFields/FlexibleMetrics/Engagement value`
-3. Deploy _Page Events_ and _Segments_ via _Control Panel -> Deploy marketing definitions_
-4. Enjoy!
+10. Configure the _RegisterTaxonomyPageEvent_ pipeline by copying `..\TaxonomyReporting\App_Config\Include\TaxonomyReporting.config` into your final `\App_Config\Include\` folder;
+11. Deploy _Page Events_ and _Segments_ via _Control Panel -> Deploy marketing definitions_
+<img src="https://github.com/kate-orlova/taxonomy-in-sitecore/raw/master/assets/deploy%20marketing%20definitions%20modal%20window.jpg" alt="Deploy marketing definitions" width="400" />
+12. Enjoy!
 
 # Contribution
 Hope you found this module useful, your contributions and suggestions will be very much appreciated. Please submit a pull request.
