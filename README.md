@@ -69,6 +69,7 @@ Sitecore packages contain:
 ![Back-end Pattern Card](/assets/back-end%20pattern%20card.png)
 4. **Views**
 5. **Dimension**
+![Taxonomy dimension](/assets/taxonomy%20dimension.png)
 6. **Event**
 7. **Reports**
 
