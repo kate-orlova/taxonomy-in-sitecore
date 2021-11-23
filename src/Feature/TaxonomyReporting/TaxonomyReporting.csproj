@@ -31,37 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.Analytics">
-      <HintPath>..\..\..\packages\Sitecore.Analytics.10.1.1\lib\net48\Sitecore.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Aggregation, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Sitecore.Analytics.Aggregation.10.1.1\lib\net48\Sitecore.Analytics.Aggregation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Core">
-      <HintPath>..\..\..\packages\Sitecore.Analytics.Core.10.1.1\lib\net48\Sitecore.Analytics.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>..\..\..\packages\Sitecore.Analytics.Model.10.1.1\lib\net48\Sitecore.Analytics.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceAnalytics.Aggregation, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Sitecore.ExperienceAnalytics.Aggregation.10.1.1\lib\net48\Sitecore.ExperienceAnalytics.Aggregation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Kernel, Version=14.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Sitecore.Kernel.10.1.1\lib\net48\Sitecore.Kernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XConnect, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Sitecore.XConnect.10.1.1\lib\netstandard2.0\Sitecore.XConnect.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.XConnect.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Sitecore.XConnect.Core.10.1.1\lib\netstandard2.0\Sitecore.XConnect.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Aggregation\TagFactCalculator.cs" />
     <Compile Include="Aggregation\TaxonomyResolver.cs" />
     <Compile Include="Configuration\ConfigSettings.cs" />
@@ -80,6 +49,39 @@
       <Name>TaxonomyInSitecore</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Sitecore.Analytics, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.Analytics.10.2.0\lib\net48\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Aggregation, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.Analytics.Aggregation.10.2.0\lib\net48\Sitecore.Analytics.Aggregation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.Analytics.Core.10.2.0\lib\net48\Sitecore.Analytics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.Analytics.Model.10.2.0\lib\net48\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceAnalytics.Aggregation, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.ExperienceAnalytics.Aggregation.10.2.0\lib\net48\Sitecore.ExperienceAnalytics.Aggregation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=16.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.Kernel.10.2.0\lib\net48\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.XConnect.10.2.0\lib\netstandard2.0\Sitecore.XConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Sitecore.XConnect.Core.10.2.0\lib\netstandard2.0\Sitecore.XConnect.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
