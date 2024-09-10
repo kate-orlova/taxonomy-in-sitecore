@@ -1,5 +1,5 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/kate-orlova/taxonomy-in-sitecore)
-[![GitHub release](https://img.shields.io/github/release-date/kate-orlova/taxonomy-in-sitecore.svg?style=flat)](https://github.com/kate-orlova/taxonomy-in-sitecore/releases/tag/v2.1)
+[![GitHub release](https://img.shields.io/github/release-date/kate-orlova/taxonomy-in-sitecore.svg?style=flat)](https://github.com/kate-orlova/taxonomy-in-sitecore/releases/tag/v2.2)
 [![GitHub license](https://img.shields.io/github/license/kate-orlova/taxonomy-in-sitecore.svg)](https://github.com/kate-orlova/taxonomy-in-sitecore/blob/master/LICENSE)
 ![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/taxonomy-in-sitecore.svg?style=flat)
@@ -8,7 +8,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/kate-orlova/taxonomy-in-sitecore)
 
 # Taxonomy in Sitecore
-Taxonomy in Sitecore module aims to support your marketing strategy and provide a consistent way of organising your content in Sitecore. Version 2.1 is compatible with [Sitecore version 10.2](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/102/Sitecore_Experience_Platform_102.aspx).
+Taxonomy in Sitecore module aims to support your marketing strategy and provide a consistent way of organising your content in Sitecore. Version 2.2 is compatible with [Sitecore version 10.4](https://developers.sitecore.com/downloads/Sitecore_Experience_Platform/104/Sitecore_Experience_Platform_104).
 
 Once the taxonomy tags are defined, you can easily classify your Sitecore Content Items by assigning the appropriate tags and start creating personalisation rules based on them. This will empower you to serve the relevant content for the target audience(s) while using Sitecore Experience Analytics to measure traffic, engagement value and outcomes.
 
